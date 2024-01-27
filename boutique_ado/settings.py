@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-jaimilit-boutiqueadopro-m8h1uu058mc.ws-us107.gitpod.io',
+    '8000-jaimilit-boutiqueadopro-m8h1uu058mc.ws-eu107.gitpod.io',
 ]
 
 
