@@ -33,7 +33,9 @@ ALLOWED_HOSTS = [
     'localhost',
     'https://bout-project-ado-8a884d4b562b.herokuapp.com/',
     'jaimilit-bout-project-ado-8a884d4b562b.herokuapp.com/',
-
+    'bout-project-ado-8a884d4b562b.herokuapp.com',
+    'bout-project-ado-8a884d4b562b.herokuapp.com',
+    
 ]
 
 
