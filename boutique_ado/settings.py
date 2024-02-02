@@ -30,10 +30,10 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-jaimilit-boutiqueadopro-m8h1uu058mc.ws-us107.gitpod.io',
     '8000-jaimilit-boutiqueadopro-m8h1uu058mc.ws-eu107.gitpod.io',
+    'localhost',
     'https://bout-project-ado-8a884d4b562b.herokuapp.com/',
-    'bout-project-ado-8a884d4b562b.herokuapp.com/',
     'jaimilit-bout-project-ado-8a884d4b562b.herokuapp.com/',
-    'locahhost',
+
 ]
 
 
@@ -129,14 +129,6 @@ WSGI_APPLICATION = 'boutique_ado.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-#DATABASES = {
- #   'default': {
-#     'ENGINE': 'django.db.backends.sqlite3',
-   #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-   # }
-#}
-
-
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -148,6 +140,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
