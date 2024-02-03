@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import dj_database_url
+if os.path.exists("env.py"):
+  import env
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -193,7 +195,7 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
+
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'bout-project-ado'
     AWS_S3_REGION_NAME = 'eu-north-1'
